@@ -1,4 +1,4 @@
-# Spring
+# Spring: Ejemplo básico de REST Web Service
 
 ## Requisitos
 
@@ -78,7 +78,7 @@ public class GreetingController {
 	private static final String template = "Hello, %s!";
 	private final AtomicLong counter = new AtomicLong();
 
-	@GetMapping("/greeting")
+	@GetMapping("/")
 	public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
@@ -102,7 +102,7 @@ Comenzarán a descargarse todas las dependencias (la primera vez puede tardar al
 
 ![Fig4. Descargando dependencias de proyecto Spring](img/springdownloaddependences.jpg)
 
-y finalmente se lanzará el proyecto.
+y cuando finalice se lanzará el proyecto.
 
 ![Fig5. Proyecto en ejecución](img/springrunproject.jpg)
 
