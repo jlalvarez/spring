@@ -15,4 +15,4 @@ Podemos crear la estructura un proyecto Spring desde https://start.spring.io/ do
 el lengauje de programacion (java, Kotlin o Groovy), establecer los metadatos (nombre, descripción, versión de Java, etc) y las
 dependencias (librerías que incorporaremos a nuestro proyecto, dependiendo de la funcionalidad a implementar)
 
-!Fig1. Spring Boot](img/springboot.jpg)
+![Fig1. Spring Boot](img/springboot.jpg)
