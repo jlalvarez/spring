@@ -17,21 +17,22 @@ dependencias (librerías que incorporaremos a nuestro proyecto, dependiendo de l
 
 ![Fig1. Spring Boot](img/springboot.jpg)
 
-Comencemos creando un proyecto con la siguiente información:
+Comencemos creando un proyecto cumplimentando el Spring Initializr con la información
+que muestra la figura:
 
-![Fig2. Proyecto Spring Boot](img/springbootproyect.jpg)
+![Fig2. Proyecto Spring Boot](img/springbootproject.jpg)
 
-Pulsa sobre el icono "Generate" para guardar el fichero con la estructura del proyecto, 
-descomprime el contenido y cópialo en el entorno AWS Cloud9.
+Una vez cumplimentada, pulsa sobre el icono "Generate" para guardar el fichero con la estructura del proyecto, 
+descomprime el contenido y cópialo en una carpeta en el entorno AWS Cloud9.
 
 
 ![Fig3. Estructura Proyecto Spring Boot](img/springcloud9.jpg)
 
-En este momento, puedes analizar el contenido del fichero pom.xml y src/main/java/api/cc/v1/V1Application.java.
+En este momento, es interesante que analices el contenido del fichero pom.xml y src/main/java/api/cc/v1/V1Application.java.
 
 ## Crear una clase POJO Java
 
-En la carpeta src/main/java/api/cc/v1/ crear una clase Java (Greeting.java) con el siguiente contenido:
+En la carpeta src/main/java/api/cc/v1/ crear una clase Java (en un fichero Greeting.java) con el siguiente contenido:
 
 ```java
 package api.cc.v1;
@@ -58,7 +59,7 @@ public class Greeting {
 
 ## Crear un Controlador
 
-En la carpeta src/main/java/api/cc/v1/ crea un controlador, una clase Java (GreetingController),
+En la carpeta src/main/java/api/cc/v1/ crea un controlador, una clase Java (en un fichero GreetingController.java),
 para que reciba las peticiones REST, con el siguiente contenido:
 
 
@@ -97,6 +98,16 @@ Lanza el proyecto con:
 $ ./mvnw spring-boot:run
 ```
 
-Comenzarán a descargarse todas las dependencias (la primera vez puede tardar algún tiempo)
+Comenzarán a descargarse todas las dependencias (la primera vez puede tardar algún tiempo):
+
+![Fig4. Descargando dependencias de proyecto Spring](img/springdownloaddependences.jpg)
+
 y finalmente se lanzará el proyecto.
 
+![Fig5. Proyecto en ejecución](img/springrunproject.jpg)
+
+Como podrás ver, AWS Cloud9 te muestra en la parte izquierda un mensaje con la URL del proyecto.
+
+Abre el navegador con esa URL para comprobar que funciona adecuadamente.
+
+![Fig5. Proyecto en ejecución](img/springrunprojectbrowser.jpg)
